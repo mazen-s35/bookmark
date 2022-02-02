@@ -1,0 +1,660 @@
+/* Glope Style Strat */
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@100;200;300;400&family=Rubik:wght@400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: all .4s linear;
+    font-family: 'Rubik', sans-serif;
+}
+
+:root {
+    --main-color: hsl(0, 94%, 66%);
+    --bule-color: hsl(231, 69%, 60%);
+    --font-color: #D3DEDC;
+    --font-color-drka: hsl(229, 31%, 21%);
+}
+
+
+/* Glope Style End */
+
+
+/* Strat Styling Header */
+
+.header {
+    height: 100px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    z-index: 1000;
+    background-color: #fff;
+    /* box-shadow: 10px 15px 10px rgba(0, 0, 0, .1); */
+}
+
+.header .links a {
+    margin-right: 29px;
+    color: var(--font-color-drak);
+}
+
+.header .links a:hover {
+    color: var(--main-color);
+}
+
+.header #icone_bars {
+    font-size: 1.2rem;
+    color: var(--font-color-drka);
+    cursor: pointer;
+    display: none;
+}
+
+.header .links .btn {
+    width: 100%;
+    max-width: 70%;
+    min-width: 50%;
+    padding: 10px 15px;
+    background-color: var(--main-color);
+    color: var(--font-color-drka);
+    border-radius: 15px;
+    margin: 10px;
+    box-shadow: 5px 10px 15px rgba(0, 0, 0, .1);
+}
+
+.header .links .btn:hover {
+    background: none;
+    border: 1px solid var(--main-color);
+    color: var(--main-color);
+}
+
+
+/* End Styling Header */
+
+
+/* Strat Styling Home */
+
+.home {
+    margin-top: 50px;
+    padding: 1rem 9%;
+    display: flex;
+    align-items: center;
+}
+
+.home .text {
+    width: 48%;
+    /* margin: 2rem;*/
+}
+
+.home .text h1 {
+    color: var(--font-color-drka);
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.home .text p {
+    color: var(--font-color);
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.home .text .btn {
+    padding: 10px 15px;
+    background-color: var(--bule-color);
+    color: var(--font-color);
+    margin-top: 1rem;
+    display: inline-block;
+    border-radius: 10px;
+    /* width: 40%; */
+}
+
+.home .text .btn:hover {
+    background: none;
+    border: 1px solid var(--bule-color);
+    color: var(--bule-color);
+}
+
+.home .text .btn_ {
+    padding: 10px 15px;
+    background-color: #eee;
+    color: var(--font-color-drak);
+    margin-top: 1rem;
+    display: inline;
+    border-radius: 10px;
+    /* width: 40%; */
+}
+
+.home .text .btn_:hover {
+    background: none;
+    border: 1px solid var(--font-color-drka);
+    color: var(--font-color-drka);
+}
+
+.home .image {
+    width: 500px;
+    height: 300px;
+    background-color: var(--bule-color);
+    border-radius: 0 0 0 40%;
+    position: relative;
+    top: 10rem;
+    left: 16%;
+    margin-bottom: 15rem;
+}
+
+.home .image img {
+    position: absolute;
+    bottom: 0;
+    right: 4rem;
+    width: 100%;
+}
+
+
+/* End Styling Home */
+
+
+/* Strat Styling Section Features */
+
+.features {
+    padding: 2rem 9%;
+}
+
+.features .text-feat {
+    text-align: center;
+}
+
+.features .text-feat h2 {
+    font-size: 1.5rem;
+    color: var(--font-color-drka);
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+.features .text-feat p {
+    width: 20rem;
+    margin: 10px auto;
+    color: var(--font-color);
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.features .tabs .list_tap {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid#b5b9b9;
+}
+
+.features .tabs .list_tap li {
+    margin-right: 1.9rem;
+    color: #b5b9b9;
+    line-height: 1.8;
+    cursor: pointer;
+}
+
+.features .tabs .list_tap li.active {
+    border-bottom: 2px solid var(--main-color);
+}
+
+.features .conten_taps {
+    padding-top: 3rem;
+    display: flex;
+}
+
+.features .image {
+    width: 100rem;
+    height: 300px;
+    position: relative;
+    top: 3rem;
+    right: 8rem;
+    background-color: var(--bule-color);
+    margin: 2rem;
+    border-radius: 0 0 29% 0;
+}
+
+.features .image img {
+    position: absolute;
+    bottom: 3rem;
+    right: -5rem;
+    width: 68%;
+}
+
+.features .conten_taps .text {
+    margin: 4rem auto;
+    /* width: 20rem; */
+}
+
+.features .conten_taps .text h2 {
+    font-size: 1.6rem;
+    color: var(--font-color-drka);
+    line-height: 2;
+    font-weight: bold;
+}
+
+.features .conten_taps .text p {
+    color: var(--font-color);
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.features .conten_taps .text .btn {
+    display: block;
+    width: 30%;
+    background-color: var(--bule-color);
+    color: #fff;
+    padding: 15px 20px;
+    text-align: center;
+    margin-top: 1.5rem;
+    border-radius: 8px;
+}
+
+.features .conten_taps .text .btn:hover {
+    background: none;
+    border: 1px solid var(--bule-color);
+    color: var(--bule-color);
+}
+
+.features .conten_taps.removeActive {
+    display: none;
+}
+
+
+/* End Styling Section Features */
+
+
+/* Strat Styling Section Ex */
+
+.ex {
+    padding: 3rem 9%;
+}
+
+.ex .text_title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.ex .text_title h2 {
+    font-size: 1.5rem;
+    color: var(--font-color-drka);
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+.ex .text_title p {
+    color: var(--font-color);
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.ex .crad_body {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.ex .crad_ex {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    text-align: center;
+    padding: 15px 20px;
+    background-color: #fff;
+    box-shadow: 0 0 1.5rem rgba(0, 0, 0, .1);
+    border-radius: 5px;
+}
+
+.ex .crad_ex h3 {
+    font-size: 1.3rem;
+    color: var(--font-color-drka);
+    line-height: 2;
+    font-weight: bold;
+}
+
+.ex .crad_ex h4 {
+    color: var(--font-color);
+    font-size: 1rem;
+    line-height: 2;
+}
+
+.ex .crad_ex .bg {
+    padding: 1rem;
+}
+
+.ex .crad_ex .btn {
+    display: block;
+    /* width: 30%; */
+    background-color: var(--bule-color);
+    color: #fff;
+    padding: 15px 20px;
+    text-align: center;
+    /* margin-top: 1rem; */
+    border-radius: 8px;
+}
+
+.ex .crad_ex .btn:hover {
+    background: none;
+    border: 1px solid var(--bule-color);
+    color: var(--bule-color);
+}
+
+
+/* End Styling Section Ex */
+
+
+/* Strat Styling Section FAQ */
+
+.faq {
+    /* min-height: 100vh; */
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 9%;
+}
+
+.faq h2 {
+    text-align: center;
+    color: var(--font-color-drak);
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+.faq .asked {
+    max-width: 700px;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid#eee;
+    cursor: pointer;
+}
+
+.faq .asked .quth {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq .asked .quth h3 {
+    font-size: 1.2rem;
+    color: var(--font-color-drak);
+}
+
+.faq .asked .anwer {
+    max-height: 0;
+    overflow: hidden;
+}
+
+.faq .asked:hover {
+    color: var(--main-color);
+}
+
+.faq .asked .anwer p {
+    font-size: 1.5rem;
+    color: var(--font-color);
+    line-height: 1.4;
+}
+
+.faq .asked.active .anwer {
+    max-height: 300px;
+}
+
+.faq .btn {
+    display: block;
+    /* width: 20%; */
+    background-color: var(--bule-color);
+    color: #fff;
+    padding: 15px 20px;
+    text-align: center;
+    margin-top: 1rem;
+    border-radius: 8px;
+}
+
+
+/* End Styling Section FAQ */
+
+
+/* FOOTER */
+
+footer {
+    background-color: var(--bule-color);
+    text-align: center;
+    /* height: 50vh; */
+    padding: 2rem 0;
+    color: #fff;
+    width: 100%;
+}
+
+footer span {
+    font-size: 1rem;
+    letter-spacing: 5px;
+    line-height: 4;
+}
+
+footer h1 {
+    font-size: 2rem;
+    line-height: 1.6;
+    width: 30rem;
+    margin: 1rem auto;
+}
+
+footer .input {
+    padding: 10px 15px;
+    width: 20%;
+    margin-right: 1rem;
+}
+
+footer .input:focus {
+    border: 2px solid var(--main-color);
+}
+
+footer .btn {
+    width: 20%;
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 10px 15px;
+    text-align: center;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+
+footer .btn:hover {
+    background: #fff;
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+}
+
+.lastFoot {
+    background-color: var(--font-color-drka);
+    padding: 1rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lastFoot img {
+    color: #fff;
+}
+
+.lastFoot .links a {
+    color: #fff;
+    margin-right: 1.5rem;
+}
+
+.lastFoot .icone_social i {
+    margin-right: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.lastFoot .links a:hover,
+.lastFoot .icone_social i:hover {
+    color: var(--main-color);
+}
+
+
+/* FOOTER */
+
+.scrollTop {
+    width: 35px;
+    height: 40px;
+    border-radius: 5px;
+    position: fixed;
+    top: 83%;
+    left: 90%;
+    background-color: var(--font-color-drka);
+    padding: 1rem;
+    cursor: pointer;
+    text-align: center;
+    display: none;
+}
+
+.scrollTop i {
+    font-size: 2.2rem;
+    color: #fff;
+    margin: -11px;
+}
+
+.scrollTop.show {
+    display: block;
+}
+
+
+/* R */
+
+@media (max-width: 906px) {
+    .home {
+        flex-direction: column-reverse;
+    }
+    .home .text {
+        text-align: center;
+        margin: 1rem auto;
+    }
+}
+
+@media (max-width: 898px) {
+    .features .conten_taps {
+        flex-direction: column;
+    }
+    .features .conten_taps .image {
+        width: 30rem;
+        height: 180px;
+    }
+    .features .conten_taps .image img {
+        width: 60%;
+    }
+    .features .conten_taps .text {
+        text-align: center;
+    }
+    .features .conten_taps .text .btn {
+        margin: 1rem auto;
+        width: 40%;
+    }
+    .ex .crad_body {
+        flex-direction: column;
+    }
+    .home .text h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 681px) {
+    .home .image {
+        width: 350px;
+    }
+    .home .image img {
+        width: 100%;
+        max-width: 127%;
+        min-width: 110%;
+    }
+    .features .tabs .list_tap {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 650px) {
+    .header .links {
+        position: absolute;
+        top: 99%;
+        right: 44%;
+        display: none;
+    }
+    .header .links.active {
+        display: block;
+    }
+    .header .links a {
+        display: block;
+        text-align: center;
+        padding: 1rem;
+    }
+    .header #icone_bars {
+        display: block;
+    }
+    .home .text .btn_ {
+        display: block;
+    }
+    .lastFoot {
+        flex-direction: column;
+    }
+    .lastFoot .links a {
+        display: block;
+        margin: 1rem 0;
+    }
+}
+
+@media (max-width: 495px) {
+    .home .image {
+        width: 300px;
+    }
+    .features .conten_taps .image {
+        width: 21rem;
+        height: 180px;
+    }
+    .features .conten_taps .image img {
+        width: 58%;
+    }
+    footer h1 {
+        font-size: 1.5rem;
+        width: 15rem;
+    }
+    footer .btn {
+        display: block;
+        margin: 1rem auto;
+        width: 25%;
+    }
+    footer .input {
+        width: 30%;
+        margin: 1rem auto;
+    }
+    .home .text h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .home .image {
+        width: 300px;
+        height: 257px;
+        left: 12%;
+    }
+}
+
+@media (max-width: 336px) {
+    .home .image {
+        width: 253px;
+        height: 257px;
+        /* left: 11%; */
+    }
+    .features .conten_taps .image {
+        width: 18rem;
+        height: 180px;
+    }
+}
